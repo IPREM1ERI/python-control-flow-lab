@@ -12,3 +12,12 @@
 #      etc.
 
 # Hint: The next number is found by adding the two numbers before it
+num1 = 0
+num2 = 1
+term = 0
+while term < 50:
+  print(num1)
+  total = num1 + num2
+  num1 = num2
+  num2 = total
+  term += 1
