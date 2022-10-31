@@ -12,3 +12,22 @@
 #      isosceles - two sides are the same length
 # 3. Print a message such as:
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
+
+length_a = int(input("Enter the lengths of three side of a triangle (side A):"))
+length_b = int(input("Enter the lengths of three side of a triangle (side B):"))
+length_c = int(input("Enter the lengths of three side of a triangle (side C):"))
+
+triangle = [length_a, length_b, length_c]
+
+countA = triangle.count(length_a)
+countB = triangle.count(length_b)
+countC = triangle.count(length_c)
+
+total = countA + countB + countC
+
+if total == 9:
+  print(f"A triangle with sides of {length_a}, {length_b} & {length_c} is a equalateral triangle")
+elif total == 5:
+  print(f"A triangle with sides of {length_a}, {length_b} & {length_c} is a isosceles triangle")
+else:
+  print(f"A triangle with sides of {length_a}, {length_b} & {length_c} is a scalene triangle")
